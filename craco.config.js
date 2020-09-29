@@ -58,5 +58,8 @@ module.exports = {
           'Pages':pathHandler('./src/pages'),
           'Assets':pathHandler('./src/assets'),
         }
+      },
+      babel: {
+        plugins: [["@babel/plugin-proposal-decorators", { legacy: true }]]
       }
   };
